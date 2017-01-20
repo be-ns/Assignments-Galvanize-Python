@@ -169,6 +169,38 @@ def homework_ten():
 								break
 
 
+def choose_problem():
+	homeworks = [1, 2, 3, 4, 5, 6 ,7 , 8, 9, 10]
+	user_input = int(raw_input("Which homework problem should we look at?> "))
+	if user_input in homeworks:
+		if user_input == 1:
+			homework_one()
+		if user_input == 2:
+			homework_two()
+		if user_input == 3:
+			homework_three()
+		if user_input == 4:
+			homework_four()
+		if user_input == 5:
+			homework_five()
+		if user_input == 6:
+			homework_six()
+		if user_input == 7:
+			homework_7()
+		if user_input == 8:
+			homework_8()
+		if user_input == 9:
+			homework_9()
+		if user_input == 10:
+			homework_ten()
+	else:
+		clear()
+		print("That's not one of the options. 1 - 10 only.")
+		time.sleep(3)
+		clear()
+		choose_problem()
+
+choose_problem()
 # build a function in which you ask user what homework problem they wanna do.
 # answer should be integer 1-10 inclusive
 # select correct homework problem
