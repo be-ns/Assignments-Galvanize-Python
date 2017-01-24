@@ -156,7 +156,7 @@ def homework_7():
 def homework_8():
 	clear()
 	print("Write a script that determines whether or not a user inputted number is a prime number.")
-	time.sleep(3)
+	time.sleep(5)
 	clear()
 	empty_list = []
 	my_max = int(raw_input("Number here> "))
@@ -176,21 +176,20 @@ def homework_9():
 	clear()
 	print("Write a script that prints the Nth element in the series as determined by input from the user.")
 	print("e.g. If the user inputs the number 3, the script should print the 3rd element in the series")
-	print("The series is: Z = ((2 * X) + Y)")
-	print("where X starts at 1, and Y starts at 0")
-	print("After each iteration, Y resets to X. X resets to Z from previous stage.")
-	time.sleep(8)
+	print("The series is: Z = ((2 * X) + 1)")
+	print("X starts at 1.")
+	print("After each iteration, X resets to Z from previous stage.")
+	time.sleep(9)
 	clear()
 	bash = int(raw_input("What number in the series do you want to see? >"))
 	bash2 = bash
 	exe = 1
-	aye = 0
 	while bash2 > 0:
-		ans = ((2 * exe) + aye)
+		ans = ((2 * exe) + 1)
 		bash2 -= 1
-		aye = exe
 		exe = ans
 		continue
+        # 1st = 3, 2nd = 7, 3rd = 15, 4th = 31
 
 	print("the {}th element in the iteration would be {}").format(bash, ans)
 
@@ -203,7 +202,7 @@ def homework_ten():
 	value = int(raw_input("What number are we looking for? > "))
 	truth = 1
 	working = list(range(1, 7))
-	count = 100000
+	count = 300000
 	while count > 0:
 		a = random.choice(working)
 		b = random.choice(working)
